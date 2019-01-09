@@ -1,0 +1,16 @@
+<div class="screen-top">
+    <div class="navbar">
+        <a class="logo-link" href="/">
+            {{#if @blog.logo}}
+                <img class="site-logo" src="{{img_url @blog.logo size="s"}}" alt="{{@blog.title}}" />
+            {{else}}
+                {{@blog.title}}
+            {{/if}}
+        </a>
+    </div>
+    <div class="sub-navbar">
+        {{#if @blog.navigation}}
+            {{navigation}}
+        {{/if}}
+    </div>
+</div>
