@@ -199,6 +199,11 @@ body {
     overflow-y: hidden;
     margin-right: 15px;
 }
+@media screen and (min-width: 800px) {
+    .post-scroll {
+        flex-wrap: wrap;
+    }
+}
 .post-card {
     background: #fff;
     width: 300px;
@@ -231,6 +236,9 @@ body {
 .post-full {
     background: #fff;
     padding: 20px 30px;
+}
+.post-full-image {
+    margin-bottom: 15px;
 }
 .post-full pre{
     background: #ADC5CF;
