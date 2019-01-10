@@ -247,6 +247,10 @@ body {
     text-decoration: none;
 }
 
+.post-template {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
 .post-full {
     background: #fff;
     padding: 20px 30px;
