@@ -184,6 +184,7 @@ body {
 .sub-navbar li a:hover {
     color: var(--yellow);
 }
+
 .post-scroll-title {
     margin: 15px 15px 0 15px;
     white-space: nowrap;
@@ -203,6 +204,18 @@ body {
     .post-scroll {
         flex-wrap: wrap;
         overflow-x: hidden;
+    }
+    .post-container {
+    }
+    .posts-outer-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .post-container {
+        height: 100%;
+        max-width: 1000px;
     }
 }
 .post-card {
