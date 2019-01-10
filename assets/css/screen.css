@@ -202,6 +202,7 @@ body {
 @media screen and (min-width: 800px) {
     .post-scroll {
         flex-wrap: wrap;
+        overflow-x: hidden;
     }
 }
 .post-card {
