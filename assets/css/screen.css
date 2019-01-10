@@ -200,7 +200,7 @@ body {
     overflow-y: hidden;
     margin-right: 15px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .post-scroll {
         flex-wrap: wrap;
         overflow-x: hidden;
