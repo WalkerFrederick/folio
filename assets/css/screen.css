@@ -233,7 +233,6 @@ p::selection {
 .post-full {
     background: #fff;
     padding: 20px 30px;
-    margin-bottom: 200px;
 }
 .post-full-image {
     margin-bottom: 15px;
@@ -264,6 +263,7 @@ p::selection {
     color: white;
     font-weight: 700;
     padding: 20px 20px 40px 20px;
+    margin-bottom: 100px;
 
 }
 .subscribe-form-title {
