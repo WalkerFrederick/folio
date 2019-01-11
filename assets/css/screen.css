@@ -299,6 +299,30 @@ body {
     border: 2px solid white;
 }
 
+@media screen and (max-width: 600px) {
+    .subscribe-form {
+        align-items: flex-start;
+    }
+    .subscribe-form form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribe-form form button{
+        padding: 10px 20px;
+        background: var(--yellow);
+        text-shadow: 0px 1px 2px rgba(0,0,0,.30);
+        width: 50%;
+        margin-top: 10px;
+
+    }
+    .subscribe-form form input{
+        padding: 10px 10px;
+        width: 100%;
+        border: 2px solid white;
+    }
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
