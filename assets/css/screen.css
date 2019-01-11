@@ -254,6 +254,7 @@ body {
 .post-full {
     background: #fff;
     padding: 20px 30px;
+    margin-bottom: 200px;
 }
 .post-full-image {
     margin-bottom: 15px;
@@ -269,6 +270,33 @@ body {
 
 .post-full a {
     color:  #2196F3;
+}
+
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2196F3;
+    color: white;
+    font-weight: 700;
+    padding: 20px 20px 40px 20px;
+
+}
+.subscribe-form-title {
+    font-size: 2rem;
+}
+.subscribe-form form {
+    display: flex;
+}
+.subscribe-form form button{
+    padding: 5px 20px;
+    background: var(--yellow);
+    text-shadow: 0px 1px 2px rgba(0,0,0,.30);
+}
+.subscribe-form form input{
+    padding: 10px 10px;
+    border: 2px solid white;
 }
 
 @keyframes fadein {
