@@ -246,6 +246,10 @@ p::selection {
     margin: 10px;
     overflow-x: scroll;
 }
+.post-full pre code::selection {
+    color: white;
+    background-color: #2196F3;
+}
 
 .post-full a {
     color:  #2196F3;
