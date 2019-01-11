@@ -34,7 +34,15 @@ production stylesheet in assets/built/screen.css
 body {
     background: #f4f8fb;
 }
+p::-moz-selection {
+    color: white;
+    background-color: var(--yellow);
+}
+p::selection {
+    color: white;
+    background-color: var(--yellow);
 
+}
 .img {
     display: block;
     width: 100%;
@@ -260,9 +268,9 @@ body {
     margin-bottom: 15px;
 }
 .post-full pre{
-    background: #ADC5CF;
+    background: #29292e;
     border-radius: 5px;
-    color: #FEFEDF;
+    color: #e6db74;
     padding: 10px;
     margin: 10px;
     overflow-x: scroll;
