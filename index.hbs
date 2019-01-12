@@ -10,6 +10,23 @@ into the {body} of the default.hbs template --}}
 
 {{!-- The main content area --}}
 <main id="site-main" class="site-main posts-outer-container">
+    <div class="header-container inner">
+        <a class="header-logo" href="/">
+            {{#if @blog.logo}}
+                <img class="site-logo" src="{{img_url @blog.logo size="s"}}" alt="{{@blog.title}}" />
+            {{else}}
+                {{@blog.title}}
+            {{/if}}
+        </a>
+        <h2 class="header-desc">{{@blog.description}}</h2>
+        <a href="#" class="header-button-outer">
+            <button class="header-button">GitHub</button>
+        </a>
+        <a href="#" class="header-button-outer">
+            <button class="header-button">Twitter</button>
+        </a>
+
+    </div>
     <div class="post-container">
     <h1 class="post-scroll-title">Projects</h1>
     <div class="post-scroll">
