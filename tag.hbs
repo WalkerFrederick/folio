@@ -4,14 +4,13 @@
     <div class="post-container">
         {{#tag}}
         <h1 class="post-scroll-title">{{name}}</h1>
+        {{/tag}}
+
         <div class="post-scroll">
-            {{#get "posts" filter="tags: project"}}
                 {{#foreach posts}}
                     {{> "post-card"}}
                 {{/foreach}}
-            {{/get}}
         </div>
-        {{/tag}}
 
             <h1 class="post-scroll-title">All Posts</h1>
             <div class="post-scroll">
