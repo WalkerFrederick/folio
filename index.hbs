@@ -26,30 +26,27 @@ into the {body} of the default.hbs template --}}
     <div class="post-container">
     <h1 class="post-scroll-title">Projects</h1>
     <div class="post-scroll">
-        {{#foreach posts}}
-
-        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-            {{> "post-card"}}
-
-        {{/foreach}}
+        {{#get "posts" limit="all" filter="tags: project"}}
+            {{#foreach posts}}
+                {{> "post-card"}}
+            {{/foreach}}
+        {{/get}}
     </div>
     <h1 class="post-scroll-title">JavaScript</h1>
     <div class="post-scroll">
-        {{#foreach posts}}
-
-        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-            {{> "post-card"}}
-
-        {{/foreach}}
+        {{#get "posts" limit="all" filter="tags: javascript"}}
+            {{#foreach posts}}
+                {{> "post-card"}}
+            {{/foreach}}
+        {{/get}}
     </div>
     <h1 class="post-scroll-title">All Posts</h1>
     <div class="post-scroll">
-        {{#foreach posts}}
-
-        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-            {{> "post-card"}}
-
-        {{/foreach}}
+        {{#get "posts" limit="all" filter="featured:false"}}
+            {{#foreach posts}}
+                {{> "post-card"}}
+            {{/foreach}}
+        {{/get}}
     </div>
     </div>
 
