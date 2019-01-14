@@ -135,6 +135,7 @@ p::selection {
     align-items: center;
     justify-items: center;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
 
 }
@@ -237,6 +238,7 @@ p::selection {
     width: 100%;
     display: flex;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
 }
 @media screen and (min-width: 1000px) {
@@ -305,6 +307,7 @@ p::selection {
     padding: 10px;
     margin: 10px;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .post-full pre code::selection {
     color: white;
