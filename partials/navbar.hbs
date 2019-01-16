@@ -1,5 +1,5 @@
 <div class="screen-top">
-    <div class="navbar">
+    <div id="navbar" class="navbar">
         <a class="logo-link inner" href="/">
             {{#if @blog.logo}}
                 <img class="site-logo" src="{{img_url @blog.logo size="s"}}" alt="{{@blog.title}}" />
@@ -8,7 +8,7 @@
             {{/if}}
         </a>
     </div>
-    <div class="sub-navbar">
+    <div id="subNavbar" class="sub-navbar">
         <div class="inner">
             {{#if @blog.navigation}}
                 {{navigation}}

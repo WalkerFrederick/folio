@@ -43,7 +43,14 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript">
+        $(window).scroll(function() {
 
+            $('#navbar').addClass('goToBlue');
+            $('#subNavbar').addClass('goToWhite');
+
+        });
+    </script>
     {{#if pagination.pages}}
     <script src="{{asset "built/infinitescroll.js"}}"></script>
     {{/if}}

@@ -39,8 +39,6 @@ p::selection {
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
 
 }
 
@@ -89,7 +87,7 @@ p::selection {
     font-family: 'Staatliches', cursive;
     font-size: 2.5em;
     font-weight: 900;
-    color: white;
+    color: inherit;
 }
 .logo-link:hover {
     text-decoration: none;
@@ -107,7 +105,8 @@ p::selection {
     width: 100%;
     margin: 0;
     padding-left: 20px;
-    background: #2196F3;
+    background: #f4f8fb;
+    color: #2196F3;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     display: flex;
     align-items: center;
@@ -120,11 +119,13 @@ p::selection {
     width: 100%;
     margin: 0;
     padding: 0 20px;
-    background: #fff	;
+    background: #f4f8fb	;
+
 
     display: flex;
     align-items: center;
     justify-items: center;
+
 }
 
 .sub-navbar ul{
@@ -154,11 +155,7 @@ p::selection {
 
 .sub-navbar li a {
     white-space: nowrap;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
+
 }
 .sub-navbar li a:hover {
     color: var(--yellow);
@@ -319,6 +316,47 @@ p::selection {
     color:  #2196F3;
 }
 
+.contact {
+    width: 100%;
+    margin-bottom: 25px;
+    background:#2196F3;
+
+    display: flex;
+}
+.contact-picture {
+    max-height: 300px;
+}
+.contact-info {
+    padding: 15px;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.contact-info a {
+    margin: 10px 0;
+}
+.contact-info p {
+    font-weight: 400;
+}
+.contact-info h1 {
+    font-size: 3vw !important;
+}
+
+@media screen and (max-width: 620px) {
+    .contact {
+        flex-direction: column;
+    }
+    .contact-picture {
+        max-height: 100%;
+    }
+    .contact-info h1 {
+        font-size: 2em !important;
+    }
+
+}
 
 .subscribe-form {
     display: flex;
@@ -406,7 +444,7 @@ footer {
 }
 .copyright {
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 20px;
     text-align: center;
     color: rgba(255,255,255,.50);
 }
@@ -437,4 +475,32 @@ footer {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@keyframes rise {
+    from { box-shadow: 0 0 0 rgba(0,0,0,0.00)}
+    to   { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)}
+}
+
+.goToBlue {
+    animation: gotoblue 1s normal forwards;
+}
+.goToWhite {
+    animation: gotowhite 1s normal forwards;
+}
+
+
+@keyframes gotoblue {
+    from { background: #f4f8fb;
+            color: #2196F3;}
+    to   { background: #2196F3;
+            color: #fff;}
+}
+@keyframes gotowhite {
+    from { background: #f4f8fb;
+        box-shadow: 0 0 0 rgba(0,0,0,0.00)
+    }
+    to   { background: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+    }
 }
