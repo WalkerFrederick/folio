@@ -19,7 +19,26 @@ into the {body} of the default.hbs template --}}
         <div class="contact-content">
             <h1>About Me</h1>
             {{content}}
+            <div onclick="" class="contact-copy-container">
+                <h1>Email:</h1>
+                <div class="contact-copy">
+                    <button class="copybtn js-emailcopybtn">Copy</button>
+                    <div class="copytext-container">
+                        <p class="copytext js-emaillink">walker@urdev.xyz</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="" class="contact-copy-container">
+                <h1>Phone:</h1>
+                <div class="contact-copy">
+                    <button class="copybtn js-phonecopybtn">Copy</button>
+                    <div class="copytext-container">
+                        <p class="copytext js-phonelink">404-901-3447</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
     {{/post}}
 

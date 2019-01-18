@@ -499,6 +499,66 @@ footer {
 
 }
 
+.contact-copy-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+}
+.contact-copy-container h1 {
+    text-align: left;
+}
+.contact-copy {
+    display: flex;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+
+}
+.copybtn {
+    height: 60px;
+    min-width: 90px;
+    color: white;
+    background: #2196F3;
+    font-weight: 700;
+}
+.copybtn:hover {
+    background: mediumspringgreen;
+
+}
+.copybtn:hover + .copytext-container {
+    border-top: 3px solid mediumspringgreen;
+    border-right: 3px solid mediumspringgreen;
+    border-bottom: 3px solid mediumspringgreen;
+    color: mediumspringgreen;
+    text-shadow: 0px 1px 2px rgba(0,0,0,.30);
+
+}
+.copytext-container {
+    height: 60px;
+    width: 200px;
+    max-width: 300px;
+    background: #f4f8fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid #2196F3;
+    border-right: 3px solid #2196F3;
+    border-bottom: 3px solid #2196F3;
+    color: #2196F3;
+
+
+
+
+}
+
+.copytext {
+
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
