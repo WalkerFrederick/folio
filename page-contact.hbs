@@ -1,0 +1,41 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+
+{{#is "page"}}
+
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main posts-outer-container">
+    {{#post}}
+    <div class="contact-container">
+
+        <div style="background: url({{@site.cover_image}}) no-repeat center center;" class="contact-header">
+            <div class="contact-picture">
+                <img src="{{feature_image}}">
+            </div>
+        </div>
+        <div class="contact-content">
+            <h1>About Me</h1>
+            {{content}}
+        </div>
+    </div>
+    {{/post}}
+
+
+    <div class="post-container">
+        <h1 class="post-scroll-title">All Posts</h1>
+        <div class="post-scroll">
+            {{#get "posts" limit="all" filter="featured:false"}}
+                {{#foreach posts}}
+                    {{> "post-card"}}
+                {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+
+    {{> footer }}
+
+</main>
+{{/is}}
