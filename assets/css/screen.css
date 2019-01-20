@@ -522,14 +522,14 @@ footer {
     font-weight: 700;
 }
 .copybtn:hover {
-    background: mediumspringgreen;
+    background: #005e99;
 
 }
 .copybtn:hover + .copytext-container {
-    border-top: 3px solid mediumspringgreen;
-    border-right: 3px solid mediumspringgreen;
-    border-bottom: 3px solid mediumspringgreen;
-    color: mediumspringgreen;
+    border-top: 3px solid #005e99;
+    border-right: 3px solid #005e99;
+    border-bottom: 3px solid #005e99;
+    color: #005e99;
     text-shadow: 0px 1px 2px rgba(0,0,0,.30);
 
 }
