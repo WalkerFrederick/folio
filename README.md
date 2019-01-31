@@ -17,5 +17,4 @@ If you are interested in contributing i'd love the help...please check to TODO s
 
 ## ToDo
 1. remove all 'me' specific content
-2. general favicon design!
-3. add 'logo' support
+2. add 'logo' support
